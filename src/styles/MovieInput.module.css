@@ -1,0 +1,10 @@
+.movieInputWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttonWrapper {
+    padding: 1rem;
+}
