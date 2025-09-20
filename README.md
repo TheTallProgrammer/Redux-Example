@@ -143,4 +143,3 @@ To explore this application and see Redux in action:
 
 Feel free to experiment with and extend this project. Its core purpose is to inform and assist in understanding Redux, building upon the foundational concepts from the original tutorial.
 
------
