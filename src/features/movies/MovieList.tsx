@@ -1,5 +1,5 @@
 import React from 'react'
-import { useDispatch, useSelector} from 'react-redux'
+import { useDispatch, useSelector } from 'react-redux'
 import { removeMovie, type Movie } from './movieSlice'
 import styles from '../../styles/MovieList.module.css'
 
@@ -15,7 +15,7 @@ const MovieList = () => {                   // prop-object.store-reducer.movie-r
             <h1>Movie List</h1>
             <div className={styles.movieListWrapper}>
                 {movies.map((movie: Movie) => (
-                    <div className={styles.movieListItem} key={movie.id}> 
+                    <div className={styles.movieListItem} key={movie.id}>
                         {movie.title} <button onClick={() => handleRemoveMovie(movie.id)}>Delete Movie</button> </div>
                 ))}
             </div>

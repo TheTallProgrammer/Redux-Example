@@ -1,6 +1,7 @@
 .movieListItem {
     padding: .5rem;
 }
-.movieListWrapper button{
+
+.movieListWrapper button {
     margin-left: 20px;
 }

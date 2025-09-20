@@ -10,7 +10,7 @@ const MovieInput = () => {
 
   const handleAddMovie = () => {
     // if there's a movie in the state (not empty)
-    if(newMovie) {
+    if (newMovie) {
       dispatch(addMovie(newMovie));
       setNewMovie("");
     }
@@ -20,7 +20,7 @@ const MovieInput = () => {
     <>
       <div className={styles.movieInputWrapper}>
         {/* every time we type in the input, it updates the newMovie state with whatever characters are put into the input box */}
-        <input onChange={(e) => setNewMovie(e.target.value)} value={newMovie}/>
+        <input onChange={(e) => setNewMovie(e.target.value)} value={newMovie} />
         <div className={styles.buttonWrapper}>
           <button onClick={handleAddMovie}>Add Movie</button>
         </div>

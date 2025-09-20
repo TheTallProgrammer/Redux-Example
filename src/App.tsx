@@ -6,8 +6,8 @@ function App() {
 
   return (
     <>
-    <MovieInput/>
-    <MovieList/>
+      <MovieInput />
+      <MovieList />
     </>
   )
 }

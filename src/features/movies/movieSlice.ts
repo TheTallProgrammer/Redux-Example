@@ -14,9 +14,9 @@ export interface MovieState {
 // state slice extends the MovieState
 const initialState: MovieState = {
     movies: [
-        {id: 1, title: "Interstellar"},
-        {id: 2, title: "Harry Potter"},
-    ], 
+        { id: 1, title: "Interstellar" },
+        { id: 2, title: "Harry Potter" },
+    ],
 }
 
 const movieSlice = createSlice({
@@ -28,7 +28,8 @@ const movieSlice = createSlice({
         addMovie: (state, action) => {
             const newMovie: Movie = {
                 id: state.movies[state.movies.length - 1].id + 1, // this state.movies is saying (state.movies).movies, state = (state.movies) in this scope
-                title: action.payload}
+                title: action.payload
+            }
             state.movies.push(newMovie);
         },
         removeMovie: (state, action) => {
@@ -39,5 +40,5 @@ const movieSlice = createSlice({
     }
 })
 
-export const {addMovie, removeMovie} = movieSlice.actions;
+export const { addMovie, removeMovie } = movieSlice.actions;
 export default movieSlice.reducer; 
